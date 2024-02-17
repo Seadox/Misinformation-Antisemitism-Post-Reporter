@@ -1,0 +1,7 @@
+backend/scraper/__pycache__/__init__.cpython-311.pyc
+backend/scraper/lib/__pycache__/__init__.cpython-311.pyc
+backend/scraper/lib/__pycache__/scraper_abs.cpython-311.pyc
+backend/scraper/lib/instagram/__pycache__/__init__.cpython-311.pyc
+backend/scraper/lib/instagram/__pycache__/api.cpython-311.pyc
+backend/scraper/lib/instagram/__pycache__/settings.cpython-311.pyc
+backend/scraper/lib/instagram/settings/sean.cpp_settings.json

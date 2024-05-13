@@ -5,7 +5,7 @@ from instagram_private_api.errors import ClientError
 import json
 
 
-async def test(post):
+async def send_to_server(post):
     async with httpx.AsyncClient() as client:
         response = await client.post("http://127.0.0.1:8000/scraper", json=post, timeout=None)
         print(response.status_code)

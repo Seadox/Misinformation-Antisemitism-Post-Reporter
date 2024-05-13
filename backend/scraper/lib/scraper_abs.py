@@ -1,6 +1,7 @@
 from random import randint
 from time import sleep
 
+
 class ScraperAbs():
     def __init__(self, client, max_messages: int, max_req_delay: int, min_req_delay: int, req_retries: int, source: str):
         self._client = client
@@ -13,17 +14,17 @@ class ScraperAbs():
     @classmethod
     def init_client(self, config: dict = {}):
         pass
-        
+
     @classmethod
     def text_message_valid(cls, msg) -> bool:
         pass
-    
+
     @classmethod
     def text_input_field_valid(cls, val: str) -> bool:
         return val is not None and len(val) > 0
 
     @classmethod
-    def text_input_obj(cls, author: str, post_text: str, post_id: str, source: str, extra_data_link: str = None, media_type: str = None):
+    def text_input_obj(cls, author: str, post_text: str, post_id: str, source: str, extra_data_link: str = None, media_type: str = None, **kwargs):
         result = {
             "post_author": author if cls.text_input_field_valid(author) else "unknown",
             "post_text": post_text if cls.text_input_field_valid(post_text) else "unknown",
@@ -32,16 +33,22 @@ class ScraperAbs():
         }
 
         if extra_data_link is not None:
-            result["extra_data_link"] = extra_data_link if cls.text_input_field_valid(extra_data_link) else "unknown"
+            result["extra_data_link"] = extra_data_link if cls.text_input_field_valid(
+                extra_data_link) else "unknown"
 
         if media_type is not None:
-            result["media_type"] = media_type if cls.text_input_field_valid(media_type) else "unknown"
+            result["media_type"] = media_type if cls.text_input_field_valid(
+                media_type) else "unknown"
+
+        for key, value in kwargs.items():
+            if cls.text_input_field_valid(value):
+                result[key] = value
 
         return result
 
     def delay_after_request(self) -> None:
         sleep(randint(self._min_req_delay, self._max_req_delay))
-    
+
     def get_text_messages(self, params: dict = {}) -> list:
         pass
 

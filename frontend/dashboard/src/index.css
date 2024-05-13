@@ -1,13 +1,16 @@
-html,
-body,
-#root,
-.app,
-.content {
-  height: 100%;
-  width: 100%;
+::-webkit-scrollbar {
+  /* width: 10px; */
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
-.app {
-  display: flex;
-  position: relative;
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-track:hover {
+  background: #555;
 }

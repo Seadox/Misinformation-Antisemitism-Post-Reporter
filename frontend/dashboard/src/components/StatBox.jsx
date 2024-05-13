@@ -1,5 +1,4 @@
-import { Box, Typography, useTheme } from "@mui/material";
-import post from "../icons/post.svg";
+import { Box, Typography } from "@mui/material";
 
 const StatBox = ({ title, value, img }) => {
   return (

@@ -1,5 +1,7 @@
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import { Route, Routes } from "react-router-dom";
 import Dashboard from "./scenes/dashboard";
+import Posts from "./scenes/posts";
 
 const darkTheme = createTheme({
   palette: {
@@ -23,7 +25,10 @@ function App() {
       <CssBaseline />
       <div className="App">
         <div className="content">
-          <Dashboard />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/posts" element={<Posts />} />
+          </Routes>
         </div>
       </div>
     </ThemeProvider>

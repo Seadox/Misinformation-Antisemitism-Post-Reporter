@@ -87,7 +87,7 @@ const UsersTable = ({ users }) => {
                   color: "#ffffff",
                 }}
               >
-                {row.platform}
+                {row.social_platform}
               </TableCell>
               <TableCell
                 align="center"
@@ -96,7 +96,7 @@ const UsersTable = ({ users }) => {
                   color: "#ffffff",
                 }}
               >
-                {row.posts}
+                {row.processed_posts}
               </TableCell>
               <TableCell
                 align="center"
@@ -105,7 +105,7 @@ const UsersTable = ({ users }) => {
                   color: "#ffffff",
                 }}
               >
-                {row.active ? "Yes" : "No"}
+                {row.is_active ? "Yes" : "No"}
               </TableCell>
               <TableCell
                 align="center"
@@ -114,7 +114,7 @@ const UsersTable = ({ users }) => {
                   color: "#ffffff",
                 }}
               >
-                {row.verified ? "Yes" : "No"}
+                {row.is_verified ? "Yes" : "No"}
               </TableCell>
             </TableRow>
           ))}

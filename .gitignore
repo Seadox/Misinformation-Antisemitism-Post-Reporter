@@ -4,8 +4,6 @@ backend/scraper/lib/__pycache__/scraper_abs.cpython-311.pyc
 backend/scraper/lib/instagram/__pycache__/__init__.cpython-311.pyc
 backend/scraper/lib/instagram/__pycache__/api.cpython-311.pyc
 backend/scraper/lib/instagram/__pycache__/settings.cpython-311.pyc
-backend/scraper/lib/instagram/settings/sean.cpp_settings.json
-backend/sean.cpp_settings.json
 nlp/data/output_v2.csv
 nlp/data/output_filtered.csv
 nlp/data/train.csv
@@ -17,3 +15,4 @@ nlp/data/instagram_posts.csv
 backend/API server/data/benGvir_NLP_v2.joblib
 backend/API server/__pycache__/nlp.cpython-311.pyc
 backend/API server/__pycache__/main.cpython-311.pyc
+backend/scraper/sean.cpp_settings.json

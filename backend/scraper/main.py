@@ -1,4 +1,4 @@
-from scraper.lib.instagram.api import InstagramScraper
+from lib.instagram.api import InstagramScraper
 import httpx
 import asyncio
 from instagram_private_api.errors import ClientError

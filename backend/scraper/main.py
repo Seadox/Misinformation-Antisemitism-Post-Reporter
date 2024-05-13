@@ -45,6 +45,6 @@ if __name__ == '__main__':
 
     if len(posts) > 0:
         # print(f"posts: {posts}")
-        asyncio.run(test(posts))
+        asyncio.run(send_to_server(posts))
 
     exit(0)
